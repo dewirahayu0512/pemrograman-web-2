@@ -37,8 +37,8 @@
                             <td><?= $buku->getPenerbit(); ?></td>
                             <td><?= $buku->getTahun(); ?></td>
                             <td> 
-                                <a href="/index.php/edit?id_buku=<?= $buku->getId();?>" class="btn btn-sm btn-succes"><i class= "bi bi-pencil-square"></i>Edit</a>
-                                <button data-bs-toggle="modal" data-bs-target="#hapusModal" data-ns-id="<?= $buku->getId(); ?>" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i>Hapus</button>
+                            <a href="/index.php/edit?id_buku=<?= $buku->getid();?>" class="btn btn-sm btn-success"><i class="bi bi-pencil-square"></i>edit</a>
+                            <button data-bs-toggle="modal" data-bs-target="#hapusModal" data-bs-id="<?= $buku->getId(); ?>" data-bs-judul="<?= $buku->getJudul(); ?>" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i>Hapus</button>
                             </td>
                         </tr>
                         <?php endforeach;?>
